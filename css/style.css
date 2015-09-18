@@ -11,7 +11,7 @@ body{
 header img{
 	margin-left: 48%;
 	width:auto;
-	height: 50px;
+	height: 70px;
 	padding-top: 10px;
 	background-color: white;
 	display: block;
@@ -36,6 +36,9 @@ nav ul li a {
 	font-weight: bold;
 }
 
+#navigationbar li a: hover{
+	background-color: black;
+}
 
 nav ul li{
 	width: auto;
@@ -54,29 +57,30 @@ nav ul li{
 #loding_screen img{
 	width: 100%;
 }
-#loding_screen h1{
+#loding_screen h1 a{
 	position: absolute;
 	color: #ffffff;
 	margin-left: 45%;
     margin-top: -20%;
     border-style: solid;
+    padding: 15px;
+    text-decoration: none;
+
 }
 
-
-.title{
-	font-family:  DejaVu Serif;
-	font-style: italic;
-}
 
 #shortWrapper{
 	width: 80%;
 	margin-left: 10%;
 	text-align: center;
-	padding-top: 2%;
-	/*background-color: #707070;*/
+	padding-top: 3%;
 	position: relative;
 	display: inline-block;
 }	
+
+#shortWrapper img{
+	height: 280px;
+}
 .threeColumns{
 	width: 33.33%;
 	float: left;
@@ -84,8 +88,16 @@ nav ul li{
     display: inline-block;  	
 }
 
+.threeColumns p{ 
+	margin-bottom: 20px;
+	
+}
 
-
+.title 
+{
+	font: italic 25px DejaVu Serif;
+	color: #000;
+}
 /*----------------footer----------------------------*/
 
 footer{
@@ -95,13 +107,21 @@ footer{
 	background-color: red;
 	margin-top: 20px;
 	margin-bottom: 50px;
-
 }
 
 .footerWrapper{
 	width: 33.33%;
 	/*background-color: blue;*/
 	float: left;
+}
+
+
+
+/*footer list style and wrap it-----too be continute*/
+
+
+.footerWrapper p a{
+	text-decoration: none;
 
 }
 
