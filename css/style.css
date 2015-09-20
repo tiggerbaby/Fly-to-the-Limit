@@ -138,8 +138,13 @@ nav ul li
 	display: block;
 	padding: 2% 1% 1% 2%;
 	margin: 0 auto;
-	background-color: blue;
-	
+	background-color: blue;	
+}
+
+.heading{
+	text-align: center;
+	/*padding-bottom: 2%;*/
+	margin-bottom: 2%;
 }
 
 .box img{
@@ -176,6 +181,29 @@ nav ul li
 	text-align: left;
 }
 
+
+/*----------------Flights----------------*/
+/*--------------------------------------*/
+/*---------------------------------------*/
+
+
+
+
+
+/*-----------------------Gallery--------------------*/
+/*-------------------------------------------------*/
+/*------------------------------------------------*/
+/*-------------------------------------------------*/
+
+.mainContainer iframe{
+	padding-left: 22%;
+}
+
+.gallery_thumbnails img{
+	height: 200px;
+	width: 300px;
+	/*float: left;*/
+}
 
 
 
