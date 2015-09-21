@@ -93,8 +93,8 @@ nav ul li
 
 .threeColumns img
 {
-	height: 200px;
-	width: 300px;
+	height: 300px;
+	width: 400px;
 }
 
 .threeColumns a
@@ -120,7 +120,8 @@ nav ul li
 {
 	font: bold 25px DejaVu Serif;
 	color: #000;
-	margin-bottom: 30px;
+	text-align: center;
+	/*margin-bottom: 30px;*/
 }
 
 /*-------------------------About------------------------*/
@@ -138,7 +139,7 @@ nav ul li
 	display: block;
 	padding: 2% 1% 1% 2%;
 	margin: 0 auto;
-	background-color: blue;	
+	/*background-color: blue;	*/
 }
 
 .heading{
@@ -147,21 +148,61 @@ nav ul li
 	margin-bottom: 2%;
 }
 
+.heading_article{
+	line-height: 2em;
+	padding: 2% 2% 2% 2%;
+}
+
 .box img{
    height: 200px;
    width: 300px;
-   padding-top: 1%;
+   text-align: 0 auto;
  }
 
-#in{
+
+.box{
+	/*background-color: green;*/
+	/*position: absolute;*/
+	/*float: left;*/
+	width: 30%;
+	height: 500px;
+	overflow: auto;
+	padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 11%;
+    margin-bottom: 2%;
+    display: inline-block;
+    line-height: 2em;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.box .clear fix{
+	zoom:1;
+}
+
+.box p{
+	text-align: left;
+	padding: 1% 6% 1% 6%;
+}
+
+
+/*#in{
      display: inline-block;
     background: red;
 }
 
+}
+#in.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+
 
 .box {
 	/*float: left;*/
-	width: 40%;
+	/*width: 40%;
 	height: 40%;
 	margin: 0 auto;
 	margin-top: 30px;
@@ -172,14 +213,11 @@ nav ul li
 	clear:both;
 }
 
-.box .clear fix{
-	zoom:1;
-}
 
 .box p{
 	margin: 10px 5px 10px 5px;
 	text-align: left;
-}
+}*/*/
 
 
 /*----------------Flights----------------*/
@@ -217,19 +255,21 @@ footer
 	width: 80%;
 	height: 200px;
 	margin: auto;
-	text-align: center;
+	/*text-align: center;*/
 	padding-top: 3%; 
 	margin-top: 20px;
 	margin-bottom: 50px;
 	font: Oblique 18px/1.6 DejaVu Sans Condensed;
 	display: block;
+	background-color: blue;
 }
 
 .footerWrapper
 {
 	width: 33.33%;
-	background-color: blue;
+	background-color: red;
 	float: left;
+	text-align: center;
 }
 
 
@@ -250,13 +290,22 @@ footer
 }
 
 
+
 #socialMedia{
 	height: 20px;
 	width: 20px;
 }
 
+.footerWrapper a img{
+	height: 70x;
+	width: 70px;
+}
+/*#youtube{*/
+	border: 2px solid black;
+	border-radius: 50px; 
+}
 
-.facebook, .twitter, .youtube,.email
+/*.facebook, .twitter, .youtube,.email
 {
 	background-image: url(../images/mini-social-icons.png);
 	background-size: 20px 20px;
@@ -298,4 +347,4 @@ footer
 footerB{
 	width: 10%;
 	float: right;
-}
+}*/
