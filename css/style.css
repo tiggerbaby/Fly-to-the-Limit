@@ -6,7 +6,7 @@
 
 body
 {
-	font: 16px/1.5;
+	font: 16px/2;
 }
 
 /* -----------logo & navigation bar--------------------*/
@@ -137,7 +137,8 @@ nav ul li
 .mainContainer{
 	width: 80%;
 	display: block;
-	padding: 2% 1% 1% 2%;
+	/*padding: 2% 1% 1% 2%;*/
+	padding: 4% 3% 3% 4%;
 	margin: 0 auto;
 	/*background-color: blue;	*/
 }
@@ -150,7 +151,7 @@ nav ul li
 
 .heading_article{
 	line-height: 2em;
-	padding: 2% 2% 2% 2%;
+	/*padding: 2% 2% 2% 2%;*/
 }
 
 .box img{
@@ -243,7 +244,61 @@ nav ul li
 	/*float: left;*/
 }
 
+/*-------------------Booking---------------------*/
+/*----------------------------------------------*/
+/*---------------------------------------------*/
+/*-------------------------------------------*/
+/*-------------------------------------------*/
 
+
+
+/*------------------------Contact------------*/
+#address{
+	width: 30%;
+	/*height: 300px;*/
+	overflow: auto;
+	padding: 2% 2% 2% 2%;
+    /*padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 11%;
+    margin-bottom: 2%;*/
+    display: inline-block;
+    line-height: 2em;
+    text-align: left;
+    /*border: 1px solid black;*/
+}
+
+#map{
+	/*background-color: green;*/
+    float: right;
+    margin-right: 5%;
+}
+
+.address{
+	width: 30%;
+	height: 300px;
+	overflow: auto;
+	padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 11%;
+    margin-bottom: 2%;
+    display: inline-block;
+    line-height: 2em;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.address{
+	zoom:1;
+}
+
+.address p{
+	text-align: left;
+	padding: 1% 6% 1% 6%;
+}
 
 ----------------footer----------------------------
 #footerContainer{
