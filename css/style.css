@@ -147,6 +147,7 @@ nav ul li
 	text-align: center;
 	/*padding-bottom: 2%;*/
 	margin-bottom: 2%;
+	font: italic bold 30px DejaVu Serif;
 }
 
 .heading_article{
@@ -276,19 +277,19 @@ nav ul li
 }
 
 .address{
-	width: 30%;
-	height: 300px;
+	width: 35%;
+	height: 500px;
 	overflow: auto;
 	padding-top: 20px;
-    padding-right: 30px;
+    /*padding-right: 30px;*/
     padding-bottom: 10px;
-    padding-left: 20px;
-    margin-left: 11%;
+    /*padding-left: 20px;*/
+    margin-left: 10%;
     margin-bottom: 2%;
     display: inline-block;
     line-height: 2em;
     text-align: center;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .address{
@@ -298,6 +299,7 @@ nav ul li
 .address p{
 	text-align: left;
 	padding: 1% 6% 1% 6%;
+	margin-left: 20%;
 }
 
 ----------------footer----------------------------
@@ -316,18 +318,21 @@ footer
 	margin-bottom: 50px;
 	font: Oblique 18px/1.6 DejaVu Sans Condensed;
 	display: block;
-	background-color: blue;
+	/*background-color: blue;*/
 }
 
 .footerWrapper
 {
 	width: 33.33%;
-	background-color: red;
+	/*background-color: red;*/
 	float: left;
 	text-align: center;
 }
 
-
+.footerWrapper p{
+	text-align: left;
+	margin-left: 25%;
+}
 
 /*footer list style and wrap it-----too be continute*/
 
