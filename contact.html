@@ -55,12 +55,13 @@
 
 		<div>
 		   <p>To send us an enquiry please fill in the foloowing form, and we will endeavour to reply within 24 hours.</p>
-			<form id="contact_form">
+			<form id="contact_form" method="POST" action="success.html">
 			<div class="form_group2">
 					<label for="name">Name</label>
 					<span class="star">*</span>
 					<br>
-					<input type="text" name="name" id="name">
+					<input type="text" name="name" id="contact_name" required>
+					<span id="firstname-error"></span>
 			</div>
 
 
@@ -68,18 +69,20 @@
 					<label for="email">Email</label>
 					<span class="star">*</span>
 					<br>
-					<input type="text" name="email" id="email">
+					<input type="text" name="email" id="contact_email" required>
+					<span id="firstname-error"></span>
 			</div>
 			<div class="form_group2">
 					<label for="phone">Phone</label>
 					<br>
-					<input type="text" name="phone" id="phone">
+					<input type="text" name="phone" id="contact_phone">
 			</div>
 			<div class="form_group2">
 					<label for="email">Message</label>
 					<span class="star">*</span>
 					<br>
-					<textarea name="message" id="message" rows="10" cols="50"></textarea>
+					<textarea name="message" id="contact_message" rows="10" cols="50"></textarea>
+					<span id="firstname-error"></span>
 			</div>
 			<div class="form-group">
                     <button type="submit">Submit</button>
@@ -87,8 +90,6 @@
 		</form>
 		</div>
 </div>
-
-
 
 
 <hr>
