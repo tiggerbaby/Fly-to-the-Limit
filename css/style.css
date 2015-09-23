@@ -237,7 +237,7 @@ nav ul li
 /*-------------------------------------------------*/
 
 .mainContainer iframe{
-	padding-left: 22%;
+	text-align: center;
 }
 
 .gallery_thumbnails img{
@@ -308,7 +308,31 @@ nav ul li
 }
 
 
-----------------footer----------------------------
+#contactWrapper{
+	padding-left: 18%;
+
+}
+
+
+
+.contact_form{
+	font-size: 1.4em;
+	padding: .5em;
+	background-color: #fff;
+}
+
+.contact textarea {
+	font-size: 2em;
+}
+
+#contact_form input{
+  /* padding: 10px;*/
+   width: 30%;
+   font-size: 1.2em;
+}
+
+
+/*----------------footer----------------------------*/
 #footerContainer{
 	display: inline-block;
 }

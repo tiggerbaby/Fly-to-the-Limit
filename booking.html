@@ -31,23 +31,101 @@
 	</nav>
 </header>
 <div class="welcomeImg">
-<img src="images/3-1.jpg" alt"welcome_image">
+<img src="images/bookingWelImg.jpg" alt"welcome_image">
 </div>
-<div id="mainContainer">
+<div class="mainContainer">
 <h1 class="heading">Booking</h1>
 <!-- Form -->
-<form action="" method="GET">
-  
-</form>
+<form id="booking_form" method="POST" action="success.html">
+			<div class="bookingform_group">
+					<label for="firstName">First Name: </label>
+					<input type="text" name="firstName" id="first_name" required>
+					<span id="bookingName-error"></span>
+			</div>
+
+
+            <div class="bookingform_group">
+					<label for="lastName">Last Name: </label>
+					<input type="text" name="lastName" id="last_name" required>
+					<span id="lastName-error"></span>
+			</div>
+
+			<div class="bookingform_group">
+					<label for="email">Email: </label>
+					<input type="text" name="email" id="booking_email" required>
+					<span id="bookingEmail-error"></span>
+
+			<div class="bookingform_group">
+					<label for="phone">Phone:</label>
+					<input type="text" name="phone" id="booking_phone" required>
+					<span id="bookingForm-error"></span>
+			</div>
+
+            <div class="bookingform_group">
+					<label for="bookingFlight">Choose Flights: </label>
+					 <select name="bookingFlight" id="booking_flights" required>
+					    <option value="fixedWing">Fixed wing - $350/hr per passenger</option>
+					    <option value="helicopter">Helicopter - $450/hr per passenger</option>
+					    <option value="glider">Glider flights - $1200/hr</option>
+					  </select>
+					<span id="bookingFlight-error"></span>
+			</div>
+            
+            <div class="bookingform_group">
+					<label for="advantureType">Advanture Type:</label>
+					<input type="checkbox" name="1hour" value="senic">1 hour senic<br>
+					<input type="checkbox" name="2hour" value="senic">2 hour senic<br> 
+					<input type="checkbox" name="mountainTrip" value="senic">Mountain Viewing (including Mt Cook) at sunset<br> 
+					<input type="checkbox" name="lakeTrip" value="senic">Lake trips<br> 
+					<input type="checkbox" name="photographicFlight" value="senic">Photographic Flights<br> 
+					<input type="checkbox" name="2hour" value="senic">Others<br> 
+					<input type="text" name="phone" id="booking_phone" required>
+
+					<span id="bookingForm-error"></span>
+			</div>
+             
+             <div class="bookingform_group">
+					<label for="date">Date:</label>
+					<input type="date" name="date" id="booking_date" required>
+					<span id="bookingForm-error"></span>
+			</div>
+			<div class="bookingform_group">
+					<label for="numbe_of_people">Number Of People:</label>
+					<input type="number" name="number_of_people" id="booking_number" required>
+					<span id="bookingForm-error"></span>
+			</div>
+			<div class="bookingform_group">
+					<label for="place">Pick Up Place</label>
+					<input type="text" name="place" id="pick_up_place" placeholder="Wanaka only" required>
+					<span id="bookingForm-error"></span>
+			</div>
+			<div class="bookingform_group">
+					<label for="time">Pick Up Time</label>
+					<input type="time" name="time" id="time" required>
+					<span id="time-error"></span>
+			</div>
+
+
+			<div class="form_group2">
+					<label for="email">Comment</label>
+					<br>
+					<textarea name="message" id="booking_message" rows="10" cols="50"></textarea>
+					<span id="contactMessage-error"></span>
+			</div>
+			<div class="form-group">
+                    <button type="submit">Submit</button>
+      		</div>
+		</form>
 
 
 
 
-</article>
 </div>
 
- <hr>
+<hr>
+
 <footer>
+	  
 			<section class="footerWrapper">
 				<h5>Contact Info</h5>
 				<p>Address: 123 Ardmore St, Wanaka</p>
@@ -59,10 +137,16 @@
 		     <section class="footerWrapper">
 				<h5>Stay Connected</h5>
 	<!-- <div id = "socialMedia"> -->
-				<a href="https://www.facebook.com/"><div class="facebook"></div></a>
+				<!-- <a href="https://www.facebook.com/"><div class="facebook"></div></a>
 			    <a href="https://twitter.com/"><div class="twitter"></div></a>
 			    <a href="https://youtube.com/"><div class="youtube"></div></a>
-			    <a href="https://gmail.com/"><div class="email"></div></a>
+			    <a href="https://gmail.com/"><div class="email"></div></a> -->
+                <a href="https://www.facebook.com/"><img src="images/facebookicon.png" alt="facebook_icon"></a>
+                <a href="https://twitter.com/"><img src="images/twittericon.png" alt="twitter_icon"></a>
+			    <a href="https://gmail.com/"><img src="images/emailicon.png" alt="email_icon"></a> 
+			    <a href="https://youtube.com/"><img src="images/youtubeicon.png" alt="youtube_icon"></a>
+                   
+
 		    </section>
      <!-- </div> -->
     
@@ -78,7 +162,6 @@
 	<!-- </div> -->
 
 </footer>
-
 
 <script type="text/javascript" src="js/flytothelimit.js"></script>
 
