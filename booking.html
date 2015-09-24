@@ -19,8 +19,8 @@
 <body>
 <header>
     <img src="images/fsmallLogo.jpg" alt="fly_to_the_limit_logo">
-	<nav>
-	<ul id="navigationbar">
+	<nav id="navigationBar">
+	<ul>
 		<li><a href="home.html">Home</a></li>
 		<li><a href="about.html">About</a></li>
 		<li><a href="flights.html">Flights</a></li>
@@ -30,6 +30,8 @@
 	</ul>
 	</nav>
 </header>
+<div id="stickyAlias"></div>
+
 <div class="welcomeImg">
 <img src="images/bookingWelImg.jpg" alt"welcome_image">
 </div>
@@ -37,31 +39,31 @@
 <h1 class="heading">Booking</h1>
 <!-- Form -->
 <form id="booking_form" method="POST" action="success.html">
-			<div class="bookingform_group">
+			<div class="form_group">
 					<label for="firstName">First Name: </label>
-					<input type="text" name="firstName" id="first_name" required>
+					<input type="text" name="firstName" id="first_name" required minlength="2">
 					<span id="bookingName-error"></span>
 			</div>
 
 
-            <div class="bookingform_group">
+            <div class="form_group">
 					<label for="lastName">Last Name: </label>
-					<input type="text" name="lastName" id="last_name" required>
+					<input type="text" name="lastName" id="last_name" required minlength="2">
 					<span id="lastName-error"></span>
 			</div>
 
-			<div class="bookingform_group">
+			<div class="form_group">
 					<label for="email">Email: </label>
 					<input type="text" name="email" id="booking_email" required>
 					<span id="bookingEmail-error"></span>
 
-			<div class="bookingform_group">
+			<div class="form_group">
 					<label for="phone">Phone:</label>
 					<input type="text" name="phone" id="booking_phone" required>
 					<span id="bookingForm-error"></span>
 			</div>
 
-            <div class="bookingform_group">
+            <div class="form_group">
 					<label for="bookingFlight">Choose Flights: </label>
 					 <select name="bookingFlight" id="booking_flights" required>
 					    <option value="fixedWing">Fixed wing - $350/hr per passenger</option>
@@ -71,7 +73,7 @@
 					<span id="bookingFlight-error"></span>
 			</div>
             
-            <div class="bookingform_group">
+            <div class="form_group">
 					<label for="advantureType">Advanture Type:</label>
 					<input type="checkbox" name="1hour" value="senic">1 hour senic<br>
 					<input type="checkbox" name="2hour" value="senic">2 hour senic<br> 
@@ -84,29 +86,29 @@
 					<span id="bookingForm-error"></span>
 			</div>
              
-             <div class="bookingform_group">
+             <div class="form_group">
 					<label for="date">Date:</label>
 					<input type="date" name="date" id="booking_date" required>
 					<span id="bookingForm-error"></span>
 			</div>
-			<div class="bookingform_group">
+			<div class="form_group">
 					<label for="numbe_of_people">Number Of People:</label>
-					<input type="number" name="number_of_people" id="booking_number" required>
+					<input type="number" name="number_of_people" id="booking_number" required min="1" max="10">
 					<span id="bookingForm-error"></span>
 			</div>
-			<div class="bookingform_group">
+			<div class="form_group">
 					<label for="place">Pick Up Place</label>
 					<input type="text" name="place" id="pick_up_place" placeholder="Wanaka only" required>
 					<span id="bookingForm-error"></span>
 			</div>
-			<div class="bookingform_group">
+			<div class="form_group">
 					<label for="time">Pick Up Time</label>
 					<input type="time" name="time" id="time" required>
 					<span id="time-error"></span>
 			</div>
 
 
-			<div class="form_group2">
+			<div class="form_group">
 					<label for="email">Comment</label>
 					<br>
 					<textarea name="message" id="booking_message" rows="10" cols="50"></textarea>
