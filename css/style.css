@@ -258,11 +258,18 @@ nav ul li
 	margin: 0.2%;
 }
 
-#gallery_img{
+#imgbox{
 	width: 100%;
 	height: 100%;
 	display: inline-block;
 	margin-top:5%; 
+}
+
+.popup_image {
+	position: static; !important;
+	display: none !important;
+	width: 100%;
+	height: 100%;
 }
 
 /*-------------------Booking---------------------*/
@@ -271,27 +278,36 @@ nav ul li
 /*-------------------------------------------*/
 /*-------------------------------------------*/
 
+#booking_form{
+	padding: .5em;
+	display: inline-block;
+	/*background-color: green;*/
+	width: 100%;
+	height: 100%;
+
+}
+
+.booking_group label{
+    margin-bottom:20px;
+}
+#booking_form section{
+	float: left;
+	/*border: 1px solid black;*/
+	margin-left: 10%;
+}
 
 
 /*------------------------Contact------------*/
 #address{
 	width: 30%;
-	/*height: 300px;*/
 	overflow: auto;
 	padding: 2% 2% 2% 2%;
-    /*padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    margin-left: 11%;
-    margin-bottom: 2%;*/
     display: inline-block;
     line-height: 2em;
     text-align: left;
-    /*border: 1px solid black;*/
 }
 
 #map{
-	/*background-color: green;*/
     float: right;
     margin-right: 5%;
 }
@@ -333,7 +349,7 @@ nav ul li
 }
 
 
-/*form*/
+/*contact-form*/
 .contact_form{
 	font-size: 1.4em;
 	padding: .5em;

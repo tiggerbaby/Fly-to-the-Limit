@@ -39,32 +39,38 @@
 <h1 class="heading">Booking</h1>
 <!-- Form -->
 <form id="booking_form" method="POST" action="success.html">
-			<div class="form_group">
+            <section>
+			<div class="booking_group">
 					<label for="firstName">First Name: </label>
+					<br>
 					<input type="text" name="firstName" id="first_name" required minlength="2">
 					<span id="bookingName-error"></span>
 			</div>
 
 
-            <div class="form_group">
+            <div class="booking_group">
 					<label for="lastName">Last Name: </label>
+					<br>
 					<input type="text" name="lastName" id="last_name" required minlength="2">
 					<span id="lastName-error"></span>
 			</div>
 
-			<div class="form_group">
+			<div class="booking_group">
 					<label for="email">Email: </label>
+					<br>
 					<input type="text" name="email" id="booking_email" required>
 					<span id="bookingEmail-error"></span>
 
-			<div class="form_group">
+			<div class="booking_group">
 					<label for="phone">Phone:</label>
+					<br>
 					<input type="text" name="phone" id="booking_phone" required>
 					<span id="bookingForm-error"></span>
 			</div>
 
-            <div class="form_group">
+            <div class="booking_group">
 					<label for="bookingFlight">Choose Flights: </label>
+					<br>
 					 <select name="bookingFlight" id="booking_flights" required>
 					    <option value="fixedWing">Fixed wing - $350/hr per passenger</option>
 					    <option value="helicopter">Helicopter - $450/hr per passenger</option>
@@ -73,50 +79,224 @@
 					<span id="bookingFlight-error"></span>
 			</div>
             
-            <div class="form_group">
+            <div class="booking_group">
 					<label for="advantureType">Advanture Type:</label>
+					<br>
 					<input type="checkbox" name="1hour" value="senic">1 hour senic<br>
 					<input type="checkbox" name="2hour" value="senic">2 hour senic<br> 
 					<input type="checkbox" name="mountainTrip" value="senic">Mountain Viewing (including Mt Cook) at sunset<br> 
 					<input type="checkbox" name="lakeTrip" value="senic">Lake trips<br> 
 					<input type="checkbox" name="photographicFlight" value="senic">Photographic Flights<br> 
-					<input type="checkbox" name="2hour" value="senic">Others<br> 
-					<input type="text" name="phone" id="booking_phone" required>
-
 					<span id="bookingForm-error"></span>
 			</div>
-             
-             <div class="form_group">
+             </section>
+             <section>
+             <div class="booking_group">
 					<label for="date">Date:</label>
+					<br>
 					<input type="date" name="date" id="booking_date" required>
 					<span id="bookingForm-error"></span>
 			</div>
-			<div class="form_group">
+			<div class="booking_group">
 					<label for="numbe_of_people">Number Of People:</label>
-					<input type="number" name="number_of_people" id="booking_number" required min="1" max="10">
+					<br>
+					<input type="text" name="number_of_people" id="booking_number" required min="1" max="10">
 					<span id="bookingForm-error"></span>
 			</div>
-			<div class="form_group">
+			<div class="booking_group">
 					<label for="place">Pick Up Place</label>
+					<br>
 					<input type="text" name="place" id="pick_up_place" placeholder="Wanaka only" required>
 					<span id="bookingForm-error"></span>
 			</div>
-			<div class="form_group">
+			<div class="booking_group">
 					<label for="time">Pick Up Time</label>
+					<br>
 					<input type="time" name="time" id="time" required>
 					<span id="time-error"></span>
 			</div>
 
 
-			<div class="form_group">
+			<div class="booking_groupp">
 					<label for="email">Comment</label>
 					<br>
 					<textarea name="message" id="booking_message" rows="10" cols="50"></textarea>
 					<span id="contactMessage-error"></span>
 			</div>
-			<div class="form-group">
+			<div class="booking_group">
                     <button type="submit">Submit</button>
       		</div>
+
+			</section>
+			
+      		<!-- <table width="100%" border="0" cellpadding="4" cellspacing="0">
+              <tbody>
+              <tr>
+                <td width="20%" align="right" valign="top"> First Name:</td>
+                <td colspan="4" valign="top"><input name="name" type="text" id="name" size="28" required minlength="2"></td>
+                <span id="fistName-error"></span>
+              </tr>
+               <tr>
+                <td width="20%" align="right" valign="top"> Last Name:</td>
+                <td colspan="4" valign="top"><input name="name" type="text" id="name" size="28" required minlength="2"></td>
+                <span id="lastName-error"></span>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top" nowrap="" class="normal">Email:</td>
+                <td colspan="4" valign="top">
+                <input name="email" type="text" id="email" size="28" placeholder = "example@example.com" required>
+                </td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top" nowrap="" class="normal">Phone 
+                  Number:</td>
+                <td colspan="4" valign="top"><input name="phone" type="text" id="phone" size="28" required minlength="6"></td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top" nowrap="" class="normal">Country:</td>
+                <td colspan="4" valign="top"><input name="country" type="text" id="country" size="28"></td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top" nowrap="" class="normal">&nbsp;</td>
+                <td colspan="4" valign="top">&nbsp;</td>
+              </tr>
+
+              <tr>
+               <td width="20%" align="right" valign="top">Choose Flights:</td>
+					 <select name="bookingFlight" id="booking_flights" required>
+					    <option value="fixedWing">Fixed wing - $350/hr per passenger</option>
+					    <option value="helicopter">Helicopter - $450/hr per passenger</option>
+					    <option value="glider">Glider flights - $1200/hr</option>
+					  </select>
+					<span id="bookingFlight-error"></span>
+			  </tr>
+
+              <tr>
+                <td width="20%" align="right" valign="top">Flight Type:</td>
+                <td width="20" valign="top">&nbsp;</td>
+                <td valign="top"><strong>SCENIC FLIGHT</strong></td>
+                <td width="20" rowspan="2" valign="top">&nbsp;</td>
+                <td rowspan="2" valign="top"><strong>ADVENTURE FLIGHT</strong></td>
+              </tr>
+              <tr>
+                <td align="right" valign="top">&nbsp;</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="Glacier Landing - Year Round" value="Glacier Landing - Year Round"></td>
+                <td valign="top">Glacier Landing - Year Round</td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="lake_wanaka_scenic" value="Lake Wanaka Scenic"></td>
+                <td valign="top">Lake Wanaka Scenic</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="mountaineering" value="Mountaineering"></td>
+                <td valign="top">Mountaineering</td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="snow_landing" value="Snow Landing"></td>
+                <td valign="top">Snow Landing - Year Round</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="hunting" value="Hunting"></td>
+                <td valign="top"><span class="normal">Hunting</span></td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="aspiring" value="Aspiring"></td>
+                <td valign="top">Mt Aspiring &amp; Glaciers</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="fishing" value="Fishing"></td>
+                <td valign="top">Fishing</td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="milford_sound" value="Milford Sound"></td>
+                <td valign="top">Milford Sound</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="heli_hiking" value="Heli Hiking"></td>
+                <td valign="top"><span class="normal">Heli-hiking</span></td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="mighty_milford" value="Mighty Milford"></td>
+                <td valign="top">Mighty Milford Sound</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="weddings" value="Weddings"></td>
+                <td valign="top">Weddings</td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="mt_cook" value="Mt Cook"></td>
+                <td valign="top">Mt Cook Scenic</td>
+                <td width="20" valign="top">&nbsp;</td>
+                <td valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="aspiring_glacier_journey" value="Aspiring Glacier Journey"></td>
+                <td valign="top">Aspiring Glacier Journey</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="commercial" value="commercial"></td>
+                <td valign="top"><strong>COMMERCIAL</strong></td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td width="20" valign="top"><input name="flight[]" type="checkbox" id="whare-kea-lodge" value="Whare Kea Lodge"></td>
+                <td valign="top"><strong>Whare Kea Chalet</strong></td>
+                <td width="20" valign="top"></td>
+                <td valign="top"></td>
+              </tr>              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td colspan="4" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">Flight date:</td>
+                <td colspan="4" valign="top"><input name="flight_day" type="text" id="flight_day" size="28"></td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">Number 
+                  of people: </td>
+                <td colspan="4" valign="top"><input name="people" type="text" id="people" size="3"></td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">Comments:</td>
+                <td colspan="4" valign="top"><textarea name="comments" cols="28" rows="5" wrap="virtual" id="comments"></textarea></td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td colspan="4" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td colspan="4" valign="top"><strong>PAYMENT DETAILS<br>
+                </strong>Note: Payment will only be taken on the day of your flight.</td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">Type of Card:</td>
+                <td colspan="4" valign="top"><select name="Credit-Card" id="Credit-Card">
+                  <option selected="selected">Select...</option>
+                  <option value="MasterCard">MasterCard</option>
+                  <option value="Visa">Visa</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">Name on Card:</td>
+                <td colspan="4" valign="top"><input name="card-name" type="text" id="card-name" size="28"></td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">Credit Card Number:</td>
+                <td colspan="4" valign="top"><input name="card-number" type="text" id="card-number" size="28">                   (16 Digits)</td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">Expiry Date: </td>
+                <td colspan="4" valign="top"><input name="card-expiry" type="text" id="card-expiry" size="28">                   (e.g. 05/16)</td>
+              </tr>
+              <tr>
+                <td width="20%" align="right" valign="top">CSC Number: </td>
+                <td colspan="4" valign="top"><input name="csc" type="text" id="csc" size="28">                   (Last 3 Digits)</td>
+              </tr> -->
+              <!--<tr>
+                <td align="right" valign="top" ><input name="terms" type="checkbox" id="terms" value="yes" /></td>
+                <td colspan="4" valign="top">Tick here to confirm you agree to our Terms and Conditions</td>
+              </tr>-->
+             <!--  <tr>
+                <td width="20%" align="right" valign="top">&nbsp;</td>
+                <td colspan="4" valign="top"><input name="Submit" type="submit" onclick="MM_validateForm('name','','R','email','','RisEmail','phone','','R','flight_day','','R','people','','R','card-name','','R','card-number','','','','','','csc','','');return document.MM_returnValue" value="Send Enquiry" class="submit"></td>
+              </tr>
+            </tbody></table> -->
 		</form>
 
 
@@ -124,10 +304,9 @@
 
 </div>
 
-<hr>
-
+ <hr>
 <footer>
-	  
+
 			<section class="footerWrapper">
 				<h5>Contact Info</h5>
 				<p>Address: 123 Ardmore St, Wanaka</p>

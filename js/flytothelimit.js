@@ -20,14 +20,37 @@ function myFunction() {
     }
 };
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-  //do work
-    navigationBar = document.getElementById("navigationBar");
+function setupNavigationBar()
+{
+      navigationBar = document.getElementById("navigationBar");
     stickyAlias = document.getElementById("stickyAlias");
     navigationBarTop = navigationBar.offsetTop;
     window.onscroll = function() {myFunction()};
+}
 
+/*
+function setupImagePopup()
+{
+   var elemArray = document.getElementsByClassName("gallery_thumbnails");
+
+    for (var i = 0; i < elemArray.length;i++)
+    {
+       var element = elemArray[i];
+       element.addEventListener("click").className = "popup_image";
+    }
+}*/
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  //do work
+  setupNavigationBar();
+  //setupImagePopup();
 });
+
+
+// pop up image
+
+
+
 
 // contact form
 
