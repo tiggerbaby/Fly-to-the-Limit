@@ -44,24 +44,49 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //do work
   setupNavigationBar();
   //setupImagePopup();
+
+  //
+  // Code to setup popup image
+  //
+
+/*
+  var galleryImages = document.querySelectorAll(".gallery");
+  for (var i = 0; i < galleryImages.length; i++)
+  {
+    var popup = galleryImages[i].querySelector(".popup");
+    var closeButton = galleryImages[i].querySelector(".close");
+    var overlay = galleryImages[i].querySelector(".overlay");
+
+    popup.addEventListener('click', function(el) {
+      el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+    }(overlay));
+
+    closeButton.addEventListener('click', function(el) {
+      el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+    }(overlay));
+  }
+*/
+
+
+  var popUp = document.querySelector(".popup");
+  console.log(popUp);
+  var newClose = document.querySelector(".close");
+  console.log(newClose);
+  popUp.addEventListener( 'click', overlay);
+  newClose.addEventListener('click', overlay);// if this is a form element listen for 'submit' event.
+  
+    
+
+  function overlay(event) {
+    var el = document.querySelector(".overlay");
+    el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
+  }
+
 });
 
 
 // pop up image
 
-var newBooknow = document.querySelector("thumbnails");
-console.log(newBooknow);
-var newClose = document.querySelector("#close");
-console.log(newClose);
-newBooknow.addEventListener( 'click', overlay);
-newClose.addEventListener('click', overlay);// if this is a form element listen for 'submit' event.
-  
-  
-
-function overlay() {
-  var el = document.querySelector("#overlay");
-  el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
-}
 
 
 // contact form

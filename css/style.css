@@ -6,7 +6,7 @@
 
 body
 {
-	font: 16px/2;
+	font: 16px/2 Myriad;
 }
 
 /* -----------logo & navigation bar--------------------*/
@@ -234,8 +234,38 @@ nav ul li
 /*----------------Flights----------------*/
 /*--------------------------------------*/
 /*---------------------------------------*/
+#priceWrapper{
+	display: block;
+
+}
+
+.price{
+	float: left;
+	font: Bold Condensed 20px Myriad Pro;
+	text-align: center;	
+	margin-left: 8%;
+}
 
 
+.price img{
+	height: 200px;
+	width: 300px;
+	margin-bottom: 4%;
+}
+
+
+/* flight type*/
+
+.type img{
+    height: 200px;
+    width: 300px;
+}
+
+.type{
+	background-color: green;
+}  
+
+type_wrapper
 
 
 
@@ -248,9 +278,10 @@ nav ul li
 	margin: auto;
 	text-align: center;
 	display: block;
+	border: 0px;
 }
 
-.gallery_thumbnails img{
+.popup img{
 	height: 200px;
 	width: 300px;
 	float: left;
@@ -266,7 +297,7 @@ nav ul li
 }
 
 
-#overlay {
+.overlay {
 	 visibility: hidden;
      position: absolute;
      left: 0px;
@@ -278,10 +309,11 @@ nav ul li
 	 background-image: url("../images/bgimg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    color: #ffffff;
 }
 
-#overlay div {
-	 background-color: rgba(0,0,255,0.6);
+.overlay div {
+	 background-color: rgba(0,0,0,0.6);
      width:850px;
      height: 700px;
      margin: 100px auto;
@@ -290,12 +322,21 @@ nav ul li
      text-align:center;
 }
 
-#overlay img{
+.overlay img{
 	width: 800px;
 	height: 630;
-
+	margin-top: 20px;
 }
 
+.overlay a{
+	color: white;
+	font: bold 18px Cambria;
+
+}
+.overlay a:hover{
+	border: 1px dotted;
+	color: white;
+}
 
 /*-------------------Booking---------------------*/
 /*----------------------------------------------*/
@@ -503,10 +544,11 @@ footer
 	height: 70x;
 	width: 70px;
 }
-/*#youtube{*/
+
+/*#youtube{
 	border: 2px solid black;
 	border-radius: 50px; 
-}
+}*/
 
 /*.facebook, .twitter, .youtube,.email
 {
