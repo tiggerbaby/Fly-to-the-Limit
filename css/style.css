@@ -29,6 +29,7 @@ header img
 	background-color: #89b8c8;
 	display: inline-block;
 	margin-bottom: 0;
+	z-index:1;
 	/*position: fixed;*/
 }
 
@@ -235,8 +236,192 @@ nav ul li
 /*--------------------------------------*/
 /*---------------------------------------*/
 #priceWrapper{
-	display: block;
+	/*display: inline-block;*/
+	/*height: 100%;
+	width: 100%;*/
+	background-color: redl
+}
+.price_img{
+    height: 250px;
+    width: 350px;
+}
 
+#priceWrapper figure figcaption{
+	font: Bold Condensed 20px Myriad Pro;
+	text-align: center;	
+	float: left;
+    margin-top: 30px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#price1{
+	    clear: both;
+    float: left;
+    margin-left: 0;
+    margin-top: 0px;
+    padding: 0px;
+    width: 31.7073%;
+    /*display: block;*/
+    text-align: center;	
+    background-color: pink;
+ }
+
+#price2{
+	    clear: none;
+    float: left;
+    margin-left: 2.439%;
+    margin-top: 0px;
+    width: 31.7073%;
+    /*display: block;*/
+     text-align: center;
+     background-color: pink;	
+}
+
+#price3{
+	    clear: none;
+    float: left;
+    margin-left: 2.439%;
+    margin-top: 0px;
+    width: 31.7073%;
+    /*display: block;*/
+     text-align: center;
+     background-color: pink;	
+}
+
+.type_img{
+	height: 150px;
+	width: 250px;
+}
+
+.type_wrapper{
+	width: 100%;
+	height: 100%;
+    background-color: green;
+	/*margin-top: 100px;*/
+	/*border: 1px solid #000;*/
+	display: inline-block;
+}
+.type_wrapper figure{
+	float: left;
+    margin-top: 30px;
+    padding: 0px;
+   /* border: 1px solid #000;*/
+}
+
+
+/*
+.type_wrapper figure figcaption{
+	font: bold 18px Open Sans;
+}
+
+.type_wrapper figure p{
+	width: 250px;
+
+}*/
+
+
+/*
+.type_intro{
+	width: 250px;
+	text-align: middle;
+}
+*/
+#type1{
+	clear: both;
+    float: left;
+    margin-left: 0;
+    margin-top: 0px;
+ /*   padding: 5px;*/
+    width: 31.7073%;
+    height: 400px;
+    display: block;
+   /* padding:20px 20px 10px 20px;
+    margin: 0px;*/
+    text-align: center;
+   background-color: pink;
+    }
+
+#type2{
+	clear: none;
+    float: left;
+    margin-left: 2.439%;
+    margin-top: 0px;
+    width: 31.7073%;
+    display: block;
+     text-align: center;
+     background-color: pink;	
+}
+
+#type3{
+	clear: none;
+    float: left;
+    margin-left: 2.439%;
+    margin-top: 0px;
+    width: 31.7073%;
+    display: block;
+     text-align: center;
+     background-color: pink;	
+}
+
+#type4{
+	    clear: both;
+    float: left;
+    margin-left: 0;
+    margin-top: 0px;
+    padding: 0px;
+    width: 31.7073%;
+    display: block;
+     text-align: center;
+      background-color: pink;	
+}
+
+#type5{
+	    clear: none;
+    float: left;
+    margin-left: 2.439%;
+    margin-top: 0px;
+    width: 31.7073%;
+    display: block;
+     text-align: center;
+      background-color: pink;	
+}
+
+#type6{
+	    clear: none;
+    float: left;
+    margin-left: 2.439%;
+    margin-top: 0px;
+    width: 31.7073%;
+    display: block;
+     text-align: center;
+      background-color: pink;	
+}
+
+
+
+
+
+
+
+
+/*.type_box{
+	    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+
+/*.type_box .clearfix{
+	zoom:1;*/
+}
+
+/*.price_img{
+	height: 200px;
+	width: 300px;
 }
 
 .price{
@@ -251,21 +436,18 @@ nav ul li
 	height: 200px;
 	width: 300px;
 	margin-bottom: 4%;
-}
+}*/
 
 
 /* flight type*/
 
-.type img{
-    height: 200px;
-    width: 300px;
-}
+
 
 .type{
-	background-color: green;
+	/*background-color: green;*/
 }  
 
-type_wrapper
+
 
 
 
@@ -294,6 +476,7 @@ type_wrapper
 	height: 100%;
 	display: inline-block;
 	margin-top:5%; 
+
 }
 
 
@@ -344,8 +527,8 @@ type_wrapper
 /*-------------------------------------------*/
 /*-------------------------------------------*/
 
-#booking_form{
-	padding: .5em;
+#booking-form{
+	padding: .6em;
 	display: inline-block;
 	/*background-color: green;*/
 	width: 100%;
@@ -353,16 +536,48 @@ type_wrapper
 
 }
 
-.booking_group label{
+.booking-group label{
     margin-bottom:20px;
+    font-size: 1.2em;
+	padding: .5em;
 }
-#booking_form section{
+#booking-form section{
 	float: left;
-	/*border: 1px solid black;*/
+	border: 1px solid black;
 	margin-left: 10%;
 }
 
 
+	
+	background-color: #fff;
+}
+
+.contact textarea {
+	font-size: 2em;
+}
+
+#contact_form input{
+  /* padding: 10px;*/
+   width: 30%;
+   font-size: 1.2em;
+}
+
+.form-group {
+	margin: 1em 0;
+	position: relative;
+}
+
+.left{
+	float: left;
+	text-align: left;
+	display: block;
+	margin-right: 5%;
+}
+
+.right{
+	float: right;
+	text-align: left;
+}
 /*------------------------Contact------------*/
 #address{
 	width: 30%;
@@ -440,8 +655,20 @@ type_wrapper
 .form-group label {
 	display: block;
 }
+.valid {
+	background-color: green;
+}
+.invalid{
+	background-color: red;
+}
+.danger {
+	color: red;
+    text-align: left;
+    float: right;
+}
 
-.form-group input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
+
+/*.form-group input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
 .form-group select {
 	font-size: 1.4em;
 	padding: .5em;
@@ -483,7 +710,7 @@ type_wrapper
 	position: absolute;
 	top: 3px;
 	right: 0;
-}
+}*/
 
 
 /*----------------footer----------------------------*/
