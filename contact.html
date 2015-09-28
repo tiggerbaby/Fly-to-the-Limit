@@ -54,38 +54,45 @@
  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2836.1889325791044!2d169.1345871!3d-44.695341500000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9d54f451209c4a5%3A0x6776b6375128cb03!2s123+Ardmore+St%2C+Wanaka+9305!5e0!3m2!1sen!2snz!4v1442836837903" width="450" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 </section>
 
+ 
+
 		<div id = "contactWrapper">
 		   <p>To send us an enquiry please fill in the following form, and we will endeavour to reply within 24 hours.</p>
 		   <br>
 			<form id="contact_form" method="POST" action="success.html">
+			
 			<div class="form_group">
-					<label for="name">Name</label>
+					<label for="contactName">Name</label>
 					<span class="star">*</span>
 					<br>
-					<input type="text" name="name" id="contact_name" required>
+					<input type="text" name="contactName" id="contactName" required minlength="2">
 					<span id="contactName-error"></span>
 			</div>
 
 
             <div class="form_group">
-					<label for="email">Email</label>
+					<label for="contactEmail">Email</label>
 					<span class="star">*</span>
 					<br>
-					<input type="text" name="email" id="contact_email" required>
+					<input type="text" name="contactEmail" id="contactEmail" required>
 					<span id="contactEmail-error"></span>
 			</div>
+
 			<div class="form_group">
-					<label for="contact_phone">Phone</label>
+					<label for="contactPhone">Phone</label>
 					<br>
-					<input type="text" name="contact_phone" id="contact_phone">
+					<input type="text" name="contactPhone" id="contactPhone">
+					<span id="contactPhone-error"></span>
 			</div>
+
 			<div class="form_group">
-					<label for="email">Message</label>
+					<label for="contactMessage">Message</label>
 					<span class="star">*</span>
 					<br>
-					<textarea name="message" id="contact_message" rows="10" cols="50" required></textarea>
+					<textarea name="contactMessage" id="contactMessage" rows="10" cols="50" required minlength="2"></textarea>
 					<span id="contactMessage-error"></span>
 			</div>
+
 			<div class="form-group">
                     <button type="submit">Submit</button>
       		</div>
@@ -98,7 +105,7 @@
 
 <footer>
 	  
-			<section class="footerWrapper">
+			<section class="footerWrapper lt">
 				<h5>Contact Info</h5>
 				<p>Address: 123 Ardmore St, Wanaka</p>
 				<p>Email: fly_to_the_limit@gmail.com</p>
@@ -106,13 +113,8 @@
 			</section>
 
 	
-		     <section class="footerWrapper">
+		     <section class="footerWrapper mid">
 				<h5>Stay Connected</h5>
-	<!-- <div id = "socialMedia"> -->
-				<!-- <a href="https://www.facebook.com/"><div class="facebook"></div></a>
-			    <a href="https://twitter.com/"><div class="twitter"></div></a>
-			    <a href="https://youtube.com/"><div class="youtube"></div></a>
-			    <a href="https://gmail.com/"><div class="email"></div></a> -->
                 <a href="https://www.facebook.com/"><img src="images/facebookicon.png" alt="facebook_icon"></a>
                 <a href="https://twitter.com/"><img src="images/twittericon.png" alt="twitter_icon"></a>
 			    <a href="https://gmail.com/"><img src="images/emailicon.png" alt="email_icon"></a> 
@@ -120,22 +122,25 @@
                    
 
 		    </section>
-     <!-- </div> -->
-    
-    <!-- <div id= "footerB"> -->
-			<section class="footerWrapper">
+			<section class="footerWrapper rt">
 				<h5>Site Map</h5>
-				<ul>
-				<li><a href="home.html">Home</a><!-- </li> <li> --><a href="gallery.html"> Gallery</a></li>          
-				<li><a href="about.html">About</a><!-- </li> <li> --><a href="booking.html"> Booking</a></li>
-				<li><a href="flights.html">Flights</a><!-- </li> <li> --><a href="gallery.html"> Gallery</a></li>
-				</ul>
+				<p><a href="home.html">Home</a><!-- </p> <p> --><a href="gallery.html">Gallery</a></p>          
+				<p><a href="about.html"> About</a><!-- </p> <p> --><a href="booking.html">Booking</a></p>
+				<p><a href="flights.html">Flights</a><!-- </p> <p> --><a href="gallery.html">Gallery</a></p>
+				
 			</section>
-	<!-- </div> -->
 
 </footer>
 
+
 <script type="text/javascript" src="js/flytothelimit.js"></script>
+<script type="text/javascript" src="js/flytothelimit.js"></script>
+<script type="text/javascript">
+                document.addEventListener('DOMContentLoaded', function(){
+                  var theForm = document.querySelector('#contact_form');
+                  addFormValidation(theForm);
+                })
+    </script>
 
 </body>
 </html>

@@ -41,9 +41,9 @@ function setupImagePopup()
     console.log(popUp);
     var newClose = gallery.querySelector(".close");
     console.log(newClose);
-    
-    popUp.addEventListener('click',    function() { overlay(gallery) }, false);
-    newClose.addEventListener('click', function() { overlay(gallery) }, false);
+
+    popUp.addEventListener('click',    function(g) { overlay(g); }.bind(this, gallery), false);
+    newClose.addEventListener('click', function(g) { overlay(g); }.bind(this, gallery), false);
   }
 }
 

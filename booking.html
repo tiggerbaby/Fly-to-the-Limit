@@ -40,34 +40,39 @@
     <!-- Form -->
 <form id="booking-form" method="POST" action="success.html">
 <div class="left">
-        <div class="booking-group">
+         <div class="booking-group">
               <label for="firstname">First Name:</label>
+              <br>
                     <input id="firstname" type="text" name="firstname" required minlength="2">
-                      <span id="firstname-error"></span>
-  
+                      <span id="firstname-error"></span>        
         </div>
 
         <div class="booking-group">
           <label for="lastname">Last Name:</label>
-          <input id="lastname" type="text" name="lastname" required minlength="2">
-          <span id="lastname-error"></span>
-        </div>
-          
-          <div class="booking-group">
-          <label for="email">Email:</label>
-          <input id="email" type="text" name="email" required minlength="2">
-          <span id="email-error"></span>
-        </div>
-        <div class="booking-group">
-          <label for="phone">Phone:</label>
           <br>
-            <input id="phone" type="text" name="phone" required  minlength="6">
-              <span id="phone-error"></span>
+              <input id="lastname" type="text" name="lastname" required minlength="2">
+              <span id="lastname-error"></span>  
         </div>
+     
+          
+        <div class="booking-group">
+          <label for="email">Email:</label>
+          <br>
+              <input id="email" type="text" name="email" required minlength="2">
+              <span id="email-error"></span>
+         </div>        
 
+          <div class="booking-group">
+            <label for="phone">Phone:</label>
+            <br>
+              <input id="phone" type="text" name="phone" required  minlength="6">
+                <span id="phone-error"></span>
+          </div>
+        
       
         <div class="booking-group">
             <label for="flight">Flight:</label>
+            <br>
             <select id="flight" name="flight" required>
                 <option value="">-- Choose a flight --</option>
                 <option value="fw">Fixed wing - $350/hr per passenger</option>
@@ -79,202 +84,144 @@
 
           <div class="booking-group">
             <label for="at">Type:</label>
+            <br>
                 <select id="at" name="at" required>
                 <option value="">-- Choose an advanture type --</option>
                 <option value="1h">1 hour senic</option>
                 <option value="2h">2 hour senic</option>
-                <option value="mt">Mountain Viewing at sunset</option>
+                <option value="mt">Mountain Viewing (including Mt Cook) at sunset</option>
                 <option value="lt">Lake trips</option>
                 <option value="pf">Photographic Flights</option>
                 <option value="other">Other</option>
             </select>
              <span id="at-error"></span>
           </div>
-</div>
-<div class="right">
+
+
            <div class="booking-group">
               <label for="date">Date:</label>
+              <br>
               <input id="date" type="date" name="date" required>
               <span id="date-error"></span>
           </div>
           <div class="booking-group">
               <label for="quantity">Number Of People:</label>
+              <br>
               <input id="quantity" type="number" name="quantity" required min="1" max="10" >
               <span id="quantity-error"></span>
           </div>
-            
+
+           
            <div class="booking-group">
               <label for="place">Pick Up Location</label>
+              <br>
               <input type="text" name="place" id="place" placeholder="Wanaka only" required>
               <span id="place-error"></span>
       </div>
           <div class="booking_group">
             <label for="time">Pick Up Time</label>
+            <br>
             <input type="time" name="time" id="time" required>
             <span id="time-error"></span>
       </div>
-         
+</div>
+
+<div class="right">         
           <div class="booking-group">
             <label for="message">Comment:</label>
             <br>
-            <textarea id="message" name="message" rows="10" cols="50" required minLength="10" maxLength="250"></textarea>
+            <textarea id="message" name="message" rows="8" cols="35" required minLength="10" maxLength="250"></textarea>
              <span id="message-error"></span>
         </div>
 
-            <div class="booking-group">
+<!-- payment -->
+           <h3>Payment Details(optional)</h3>
+           <p>Note:Payment will only be taken on the day of your flight.</p>
+          <div class="booking-group">
+            <label for="card">Type of Card:</label>
+            <br>
+            <select id="card" name="card">
+                <option value="">-- Select --</option>
+                <option value="master">MasterCard</option>
+                <option value="visa">Visa</option>
+            </select>
+             <span id="card-error"></span>
+         </div>
+
+         <div class="booking-group">
+              <label for="noc">Name on Card:</label>
+              <br>
+                    <input id="noc" type="text" name="noc">
+                      <span id="noc-error"></span>
+        </div>
+        <div class="booking-group">
+              <label for="ccnum">Credit Card Number:</label>
+              <br>
+                    <input id="ccnum" type="text" name="ccnum" placeholder="16 Digits">
+                      <span id="ccnum-error"></span>
+        </div>
+        <div class="booking-group">
+              <label for="edate">Expiry Date</label>
+              <br>
+                    <input id="edate" type="text" name="edate" placeholder="e.g. 05/16">
+                      <span id="edate-error"></span>
+        </div>
+        <div class="booking-group">
+              <label for="csc">CSC Number</label>
+              <br>
+                    <input id="csc" type="text" name="csc" placeholder="Last 3 Digits">
+                      <span id="csc-error"></span>
+        </div>
+      
+
+       <div class="booking-group">
             <label for="agree">
                 <input id="agree" name="agree" type="checkbox" required>
                 I agree to the terms and conditions.
             </label>
-
             <span id="agree-error"></span>
         </div>    
         <div class="form-group">
           <button type="submit">Submit</button>
         </div>
-</div>
+</div>        
       </form>
-
-
-
-      <!-- <form id="booking-form" method="POST" action="success.html">
-            <section>
-			<div class="booking_group">
-					<label for="firstName">First Name: </label>
-					<br>
-					<input type="text" name="firstName" id="first_name" required minlength="2">
-					<span id="bookingName-error"></span>
-			</div>
-
-
-      <div class="booking_group">
-					<label for="lastName">Last Name: </label>
-					<br>
-					<input type="text" name="lastName" id="last_name" required minlength="2">
-					<span id="lastName-error"></span>
-			</div>
-
-			<div class="booking_group">
-					<label for="email">Email: </label>
-					<br>
-					<input type="text" name="email" id="booking_email" required>
-					<span id="bookingEmail-error"></span>
-
-			<div class="booking_group">
-					<label for="phone">Phone:</label>
-					<br>
-					<input type="text" name="phone" id="booking_phone" required>
-					<span id="bookingForm-error"></span>
-			</div>
-
-            <div class="booking_group">
-					<label for="bookingFlight">Choose Flights: </label>
-					<br>
-					 <select name="bookingFlight" id="booking_flights" required>
-					    <option value="fixedWing">Fixed wing - $350/hr per passenger</option>
-					    <option value="helicopter">Helicopter - $450/hr per passenger</option>
-					    <option value="glider">Glider flights - $1200/hr</option>
-					  </select>
-					<span id="bookingFlight-error"></span>
-			</div>
-            
-            <div class="booking_group">
-					<label for="advantureType">Advanture Type:</label>
-					<br>
-					<input type="checkbox" name="1hour" value="senic">1 hour senic<br>
-					<input type="checkbox" name="2hour" value="senic">2 hour senic<br> 
-					<input type="checkbox" name="mountainTrip" value="senic">Mountain Viewing (including Mt Cook) at sunset<br> 
-					<input type="checkbox" name="lakeTrip" value="senic">Lake trips<br> 
-					<input type="checkbox" name="photographicFlight" value="senic">Photographic Flights<br> 
-					<span id="advanture-error"></span>
-			</div>
-             </section>
-             <section>
-             <div class="booking_group">
-					<label for="date">Date:</label>
-					<br>
-					<input type="date" name="date" id="booking_date" required>
-					<span id="date-error"></span>
-			</div>
-			<div class="booking_group">
-					<label for="numbe_of_people">Number Of People:</label>
-					<br>
-					<input type="text" name="number_of_people" id="bookingnumber" required min="1" max="10">
-					<span id="bookingnumber-error"></span>
-			</div>
-			<div class="booking_group">
-					<label for="place">Pick Up Place</label>
-					<br>
-					<input type="text" name="place" id="place" placeholder="Wanaka only" required>
-					<span id="place-error"></span>
-			</div>
-			<div class="booking_group">
-					<label for="time">Pick Up Time</label>
-					<br>
-					<input type="time" name="time" id="time" required>
-					<span id="time-error"></span>
-			</div>
-
-
-			<div class="booking_groupp">
-					<label for="email">Comment</label>
-					<br>
-					<textarea name="message" id="booking_message" rows="10" cols="50"></textarea>
-					<span id="contactMessage-error"></span>
-			</div>
-			<div class="booking_group">
-                    <button type="submit">Submit</button>
-      		</div>
-
-			</section>
-			
-      		
-		</form> -->
-
 
 
 
 </div>
 
  <hr>
+
 <footer>
+    
+      <section class="footerWrapper lt">
+        <h5>Contact Info</h5>
+        <p>Address: 123 Ardmore St, Wanaka</p>
+        <p>Email: fly_to_the_limit@gmail.com</p>
+        <p>Phone: 0800 111 1111</p>
+      </section>
 
-			<section class="footerWrapper">
-				<h5>Contact Info</h5>
-				<p>Address: 123 Ardmore St, Wanaka</p>
-				<p>Email: fly_to_the_limit@gmail.com</p>
-				<p>Phone: 0800 111 1111</p>
-			</section>
-
-	
-		     <section class="footerWrapper">
-				<h5>Stay Connected</h5>
-	<!-- <div id = "socialMedia"> -->
-				<!-- <a href="https://www.facebook.com/"><div class="facebook"></div></a>
-			    <a href="https://twitter.com/"><div class="twitter"></div></a>
-			    <a href="https://youtube.com/"><div class="youtube"></div></a>
-			    <a href="https://gmail.com/"><div class="email"></div></a> -->
+  
+         <section class="footerWrapper mid">
+        <h5>Stay Connected</h5>
                 <a href="https://www.facebook.com/"><img src="images/facebookicon.png" alt="facebook_icon"></a>
                 <a href="https://twitter.com/"><img src="images/twittericon.png" alt="twitter_icon"></a>
-			    <a href="https://gmail.com/"><img src="images/emailicon.png" alt="email_icon"></a> 
-			    <a href="https://youtube.com/"><img src="images/youtubeicon.png" alt="youtube_icon"></a>
+          <a href="https://gmail.com/"><img src="images/emailicon.png" alt="email_icon"></a> 
+          <a href="https://youtube.com/"><img src="images/youtubeicon.png" alt="youtube_icon"></a>
                    
 
-		    </section>
-     <!-- </div> -->
-    
-    <!-- <div id= "footerB"> -->
-			<section class="footerWrapper">
-				<h5>Site Map</h5>
-				<ul>
-				<li><a href="home.html">Home</a><!-- </li> <li> --><a href="gallery.html"> Gallery</a></li>          
-				<li><a href="about.html">About</a><!-- </li> <li> --><a href="booking.html"> Booking</a></li>
-				<li><a href="flights.html">Flights</a><!-- </li> <li> --><a href="gallery.html"> Gallery</a></li>
-				</ul>
-			</section>
-	<!-- </div> -->
+        </section>
+      <section class="footerWrapper rt">
+        <h5>Site Map</h5>
+        <p><a href="home.html">Home</a><!-- </p> <p> --><a href="gallery.html">Gallery</a></p>          
+        <p><a href="about.html"> About</a><!-- </p> <p> --><a href="booking.html">Booking</a></p>
+        <p><a href="flights.html">Flights</a><!-- </p> <p> --><a href="gallery.html">Gallery</a></p>
+        
+      </section>
 
 </footer>
+
 
 <script type="text/javascript" src="js/flytothelimit.js"></script>
 <script type="text/javascript">
