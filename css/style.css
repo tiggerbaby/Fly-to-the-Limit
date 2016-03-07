@@ -751,6 +751,34 @@ footer
 	padding: 3.5%;
 }
 
+
+
+/*--------Print style sheet---------*/
+@media print {
+  header nav, footer 
+  {display: none;
+  }
+
+  header img{
+  	display:none;
+  }
+  nav ul{
+  	display: none;
+  }
+  .welcomeImg
+  {
+  	display: none;
+  }
+   form button
+  {
+  	display: none;
+  }
+}
+
+
+
+
+
 /*#youtube{
 	border: 2px solid black;
 	border-radius: 50px; 
