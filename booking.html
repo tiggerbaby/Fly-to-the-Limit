@@ -33,7 +33,7 @@
 <div id="stickyAlias"></div>
 
 <div class="welcomeImg">
-    <img src="images/bookingWelImg.jpg" alt"welcome_image">
+    <img src="images/bookingWelImg.jpg" alt="welcome_image">
 </div>
 <div class="mainContainer">
   <h1 class="heading">Booking</h1>
@@ -43,14 +43,14 @@
          <div class="booking-group">
               <label for="firstname">First Name:</label>
               <br>
-                    <input id="firstname" type="text" name="firstname" required minlength="2">
+                    <input id="firstname" type="text" name="firstname" required minLength="2">
                       <span id="firstname-error"></span>        
         </div>
 
         <div class="booking-group">
           <label for="lastname">Last Name:</label>
           <br>
-              <input id="lastname" type="text" name="lastname" required minlength="2">
+              <input id="lastname" type="text" name="lastname" required minLength="2">
               <span id="lastname-error"></span>  
         </div>
      
@@ -58,14 +58,14 @@
         <div class="booking-group">
           <label for="email">Email:</label>
           <br>
-              <input id="email" type="text" name="email" required minlength="2">
+              <input id="email" type="text" name="email" required minLength="2">
               <span id="email-error"></span>
          </div>        
 
           <div class="booking-group">
             <label for="phone">Phone:</label>
             <br>
-              <input id="phone" type="text" name="phone" required  minlength="6">
+              <input id="phone" type="text" name="phone" required  minLength="6">
                 <span id="phone-error"></span>
           </div>
         
@@ -107,7 +107,7 @@
           <div class="booking-group">
               <label for="quantity">Number Of People:</label>
               <br>
-              <input id="quantity" type="number" name="quantity" required min="1" max="10" >
+              <input id="quantity" type="number" name="quantity" required minLength="1" max="10" >
               <span id="quantity-error"></span>
           </div>
 
@@ -130,7 +130,7 @@
           <div class="booking-group">
             <label for="message">Comment:</label>
             <br>
-            <textarea id="message" name="message" rows="8" cols="35" required minLength="10" maxLength="250"></textarea>
+            <textarea id="message" name="message" rows="8" cols="35" required minLength="10" max="250"></textarea>
              <span id="message-error"></span>
         </div>
 
@@ -182,7 +182,7 @@
             <span id="agree-error"></span>
         </div>    
         <div class="form-group">
-          <button type="submit">Submit</button>
+          <button type="submit" class="submit_button">Submit</button>
         </div>
 </div>        
       </form>

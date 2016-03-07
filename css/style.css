@@ -65,7 +65,7 @@ nav ul li
 
 #loding_screen
 {
-	display: relative;
+	position: relative;
 }
 
 #loding_screen img
@@ -79,14 +79,14 @@ nav ul li
 	margin-left: 45%;
     margin-top: -20%;
     border-style: solid;
-    padding: 15px;
+    padding: 5px 20px 5px 20px;
     text-decoration: none;
 
 }
 
 #loding_screen h1 a:hover
 {
-	border-style: dotted; 
+	border: 4px solid; 
 }
 
 
@@ -102,8 +102,8 @@ nav ul li
 
 .threeColumns img
 {
-	height: 300px;
-	width: 400px;
+	height: 280px;
+	width: 350px;
 }
 
 .threeColumns a
@@ -164,11 +164,17 @@ nav ul li
 	font-size: 18px;
 	margin-bottom: 2%;
 }
+.article_title{
+	font: italic bold 25px DejaVu Serif;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
 
 .box img{
    height: 200px;
    width: 300px;
-   text-align: 0 auto;
+   text-align:center;
  }
 
 
@@ -191,9 +197,9 @@ nav ul li
     border: 1px solid black;
 }
 
-.box .clear fix{
+/*.box .clear fix{
 	zoom:1;
-}
+}*/
 
 .box p{
 	text-align: left;
@@ -247,7 +253,7 @@ nav ul li
 }
 
 #priceWrapper figure figcaption{
-	font: Bold Condensed 20px Myriad Pro;
+	font: Bold 20px Myriad Pro;
 	text-align: center;	
 	float: left;
     margin-top: 10px;
@@ -263,33 +269,33 @@ nav ul li
     margin-left: 0;
     margin-top: 0px;
     padding: 0px;
-    width: 31.7073%;
+    width: 30%;
     /*display: block;*/
     text-align: center;	
-    background-color: #CFCFCF;
+    background-color: #95CB98;
    /*border: 1px solid #000*/;
  }
 
 #price2{
 	    clear: none;
     float: left;
-    margin-left: 2.439%;
+    margin-left: 2%;
     margin-top: 0px;
-    width: 31.7073%;
+    width: 30%;
     /*display: block;*/
      text-align: center;
-     background-color: #CFCFCF;	
+     background-color: #95CB98;	
 }
 
 #price3{
 	    clear: none;
     float: left;
-    margin-left: 2.439%;
+    margin-left: 2%;
     margin-top: 0px;
-    width: 31.7073%;
+    width: 30%;
     /*display: block;*/
      text-align: center;
-     background-color: #CFCFCF;	
+     background-color: #95CB98;	
 }
 
 .type_img{
@@ -333,18 +339,12 @@ nav ul li
 }
 
 
-/*
-.type_intro{
-	width: 250px;
-	text-align: middle;
-}
-*/
 #type1{
 	clear: both;
     float: left;
     margin-left: 0;
     margin-top: 0px;
-    width: 31.7073%;
+    width: 30%;
     display: block;
     text-align: center;
    background-color: #CFCFCF;
@@ -353,23 +353,23 @@ nav ul li
 #type2{
 	clear: none;
     float: left;
-    margin-left: 2.439%;
+    margin-left: 2%;
     margin-top: 0px;
-    width: 31.7073%;
+    width: 30%;
     display: block;
      text-align: center;
-     background-color: #CFCFCF;	
+     background-color: #CFCFCF;
 }
 
 #type3{
 	clear: none;
     float: left;
-    margin-left: 2.439%;
+    margin-left: 2%;
     margin-top: 0px;
-    width: 31.7073%;
+    width: 30%;
     display: block;
     text-align: center;
-    background-color: #CFCFCF;	
+    background-color: #CFCFCF;
 }
 
 #type4{
@@ -378,18 +378,18 @@ nav ul li
 	    margin-left: 0;
 	    margin-top: 0px;
 	    padding: 0px;
-	    width: 31.7073%;
+	    width: 30%;
 	    display: block;
      	text-align: center;
-      	background-color: #CFCFCF;	
+      	background-color: #CFCFCF;
 }
 
 #type5{
 	    clear: none;
 	    float: left;
-	    margin-left: 2.439%;
+	    margin-left: 2%;
 	    margin-top: 0px;
-	    width: 31.7073%;
+	    width: 30%;
 	    display: block;
 	    text-align: center;
 	     background-color: #CFCFCF;
@@ -398,76 +398,38 @@ nav ul li
 #type6{
 	    clear: none;
 	    float: left;
-	    margin-left: 2.439%;
+	    margin-left: 2%;
 	    margin-top: 0px;
-	    width: 31.7073%;
+	    width: 30%;
 	    display: block;
 	    text-align: center;
-	    background-color: #CFCFCF;	
+	    background-color: #CFCFCF;
 }
 
 
 
-/*.booknow {
-	-/*webkit-appearance: button;
-    -moz-appearance: button;*/
-    appearance: button;
+.booknow{
+	/*-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;*/
 
     text-decoration: none;
-    background-color: #89b8c8;
+    background-color: #377F3B;
+    padding: 10px 15px 10px 15px;
     color: #ffffff;
-    padding: 15px;
+     box-shadow: 3px 3px 1px grey;
+    margin: 0 auto;
+    text-align: center;
     border-radius: 10px;
 }
 
 .booknow:hover{
-	color: #316C7F;
-}
-*/
-
-
-/*.type_box{
-	    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    margin: 0px;
+	border: 2px solid #377F3B;
 }
 
-
-/*.type_box .clearfix{
-	zoom:1;*/
+.bookContainer p{
+	text-align: center;
 }
-
-/*.price_img{
-	height: 200px;
-	width: 300px;
-}
-
-.price{
-	float: left;
-	font: Bold Condensed 20px Myriad Pro;
-	text-align: center;	
-	margin-left: 8%;
-}
-
-
-.price img{
-	height: 200px;
-	width: 300px;
-	margin-bottom: 4%;
-}*/
-
-
-/* flight type*/
-
-
-
-.type{
-	/*background-color: green;*/
-}  
-
-
 
 
 
@@ -477,7 +439,7 @@ nav ul li
 /*-------------------------------------------------*/
 
 .mainContainer iframe{
-	margin: auto;
+	margin: 0 auto;
 	text-align: center;
 	display: block;
 	border: 0px;
@@ -506,7 +468,7 @@ nav ul li
      left: 0px;
      top: 0px;
      width:100%;
-     height:100%;
+     /*height:100%;*/
      text-align:center;
      z-index: 1000;
 	 background-image: url("../images/bgimg.png");
@@ -527,7 +489,7 @@ nav ul li
 
 .overlay img{
 	width: 800px;
-	height: 630;
+	height: 630px;
 	margin-top: 20px;
 }
 
@@ -545,7 +507,6 @@ nav ul li
 .clearfix{
 	clear: both;
 }
-
 
 /*-------------------Booking---------------------*/
 /*----------------------------------------------*/
@@ -583,6 +544,11 @@ nav ul li
    width: 70%;
    font-size: 1.2em;
 }
+.booking-group textarea{
+   font-size: 1.2em;
+}
+
+
 input[type="checkbox"]{
 	width: auto;
 }
@@ -615,38 +581,42 @@ input[type="checkbox"]{
 }
 /*------------------------Contact------------*/
 
+.submit_button{
+    width: 100px;
+    height: 30px;
+	background-color: #89b8c8;
+	color: white;
+	font-size: 16px;
+}
+
+.submit_button:hover{
+    font-size: 18px;
+    height: 32px;
+}
 
 #map{
-    float: right;
-    margin-right: 5%;
+    float: left;
+    display: block;
+    width: 35%;
+    margin-left:25%;
+    margin-top: 3%;
+
+}
+#map iframe{
+	border:0;
 }
 
-.address{
+#address{
 	float: left;
-	/*width: 35%;*/
-	height: 500px;
-	overflow: auto;
-	padding-top: 20px;
-    /*padding-right: 30px;*/
-    padding-bottom: 10px;
-    /*padding-left: 20px;*/
-    margin-left: 10%;
-    margin-bottom: 2%;
-    display: inline-block;
+    display: block;
     line-height: 2em;
-    text-align: center;
-    /*border: 1px solid black;*/
+    text-align: left;
+    width: 35%;
+    margin-top: 3%;
+    font-size: 18px;
 }
 
-.address{
-	zoom:1;
-}
 
-.address p{
-	text-align: left;
-	padding: 1% 6% 1% 6%;
-	margin-left: 20%;
-}
 
 .star{
 	color: red;
@@ -654,10 +624,12 @@ input[type="checkbox"]{
 
 
 #contactWrapper{
-	/*padding-left: 18%;*/
 	width: 70%;
 	display: block;
-
+	font-size: 18px;
+}
+#contactWrapper p{
+	font-weight: bold;
 }
 
 
@@ -682,6 +654,9 @@ input[type="checkbox"]{
 	margin: 1em 0;
 	position: relative;
 }
+#contact_form textarea{
+	font-size: 1.2em;
+}
 
 .form-group label {
 	display: block;
@@ -690,7 +665,7 @@ input[type="checkbox"]{
 	background-color: green;
 }
 .invalid{
-	background-color: red;
+	background-color: #E74C3C;
 }
 .danger {
 	color: red;
@@ -698,56 +673,22 @@ input[type="checkbox"]{
     float: right;
 }
 
+/*-----------------success----------------------*/
 
-/*.form-group input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
-.form-group select {
-	font-size: 1.4em;
-	padding: .5em;
-	background-color: #fff;
+#send{
+	width: 70%;
+	height: 300px;
+   float: left;
+   display: inline-block;
+   margin: 0 auto;
 }
 
-.form-group textarea {
-	font-size: 1.2em;
-}
-
-.form-group 
-    input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]),
-.form-group textarea,
-.form-group select { 
-	width: 100%;
-	box-sizing: border-box;
-	border: 1px inset #999;
-}
-
-.form-group 
-    input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="reset"]):not([type="button"]).invalid,
-.form-group textarea.invalid,
-.form-group select.invalid {
-	border: 1px inset #c00;
-	color: #c00;
-	background-color: #fcc;
-}
-
-.danger {
-	background-color: #fcc;
-	color: #c00;
-	font-size: 0.8em;
-	padding: 0 .5em;
-	border-radius: 3px;
-}
-
-.form-group .danger {
-	display: block;
-	position: absolute;
-	top: 3px;
-	right: 0;
-}*/
-
-/*success*/
 #note{
-	font: bold 25px DejaVu Serif;
+	font: 20px/2 DejaVu Serif;
+	float: left;
 
 }
+
 
 
 
