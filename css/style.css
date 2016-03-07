@@ -755,7 +755,9 @@ footer
 
 /*--------Print style sheet---------*/
 @media print {
-  header nav, footer 
+  
+/* ----Home ----*/
+header nav, footer 
   {display: none;
   }
 
@@ -765,17 +767,53 @@ footer
   nav ul{
   	display: none;
   }
+  figcaption img{
+   display: none;
+  }
+
+  #loding_screen h1{
+  	display: none;
+  }
   .welcomeImg
   {
   	display: none;
   }
+  /*---About---*/
+  .box img{
+  	display:none;
+  }
+  .box{
+  	width: 100%;
+  	height: 100%;
+  	border: none;
+  	text-align: left;
+  	margin: 0;
+  	padding: 0;
+  }
+  /*---Flight---*/
+  /*#priceWrapper figure img{
+  	display: none;
+  }*/
+  /*---Contact----*/
    form button
   {
   	display: none;
   }
 }
 
-
+/*width: 30%;
+	height: 550px;
+	overflow: auto;
+	padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 11%;
+    margin-bottom: 2%;
+    display: inline-block;
+    line-height: 2em;
+    text-align: center;
+    border: 1px solid black;*/
 
 
 
