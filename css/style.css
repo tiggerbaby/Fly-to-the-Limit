@@ -802,6 +802,11 @@ header nav, nav ul, footer, hr {
   	display: none;
   }
 
+  /*---Gallery---*/
+  iframe,  .gallery img {
+  	display: none;
+  }
+
   /*---Contact----*/
    form button
   {
