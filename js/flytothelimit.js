@@ -133,8 +133,8 @@ function addFormValidation(theForm) {
          }
        }
 
-       if (field.type === "email" && ! isEmail(field.value)){
-           errorMsg = "please enter a valid email";
+       if (field.id === "email" && ! isEmail(field.value)){
+           errorMsg = "Please enter a valid email";
        }
       
        // Min and Max length check----------------------------------------------------------------------
@@ -165,14 +165,18 @@ function addFormValidation(theForm) {
 
        return true;
    }
+
+   
    function needsToBeValidated(field){
        return ['submit', 'reset', 'button', 'hidden', 'fieldset'].indexOf(field.type) === -1;
    }
+
 }
 
-   function isEmail(input){
+function isEmail(input){
        return input.match(/^([a-z0-9_.\-+]+)@([\da-z.\-]+)\.([a-z\.]{2,})$/);    
    }
+
 
 
 
