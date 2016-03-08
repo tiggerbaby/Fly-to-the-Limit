@@ -3,7 +3,6 @@
 	padding: 0;
 }
 
-
 body
 {
 	font: 16px/2 Myriad;
@@ -757,21 +756,11 @@ footer
 @media print {
   
 /* ----Home ----*/
-header nav, footer 
-  {display: none;
+header nav, nav ul, footer, hr {
+	display: none;
   }
 
-  header img{
-  	display:none;
-  }
-  nav ul{
-  	display: none;
-  }
-  figcaption img{
-   display: none;
-  }
-
-  #loding_screen h1{
+  header img, figcaption img, #loding_screen h1{
   	display: none;
   }
   .welcomeImg
@@ -791,13 +780,32 @@ header nav, footer
   	padding: 0;
   }
   /*---Flight---*/
-  /*#priceWrapper figure img{
+  #priceWrapper figure img, .type_img{
   	display: none;
-  }*/
+  }
+  #type1, #type2, #type3, #type4, #type5, #type6{
+  	width: 100%;
+  	height: 100%;
+  	background-color: white;
+  }
+  .type_wrapper figure p {
+    width: 100%;
+}
+  .type_intro{
+  	width: 100%;
+  	height: 100%;
+  float: left;
+  	text-align:left;
+  	margin: 0;
+  }
+  .bookContainer p{
+  	display: none;
+  }
+
   /*---Contact----*/
    form button
   {
-  	display: none;
+  	visibility: hidden;
   }
 }
 
