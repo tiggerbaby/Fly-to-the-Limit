@@ -133,7 +133,7 @@ function addFormValidation(theForm) {
          }
        }
 
-       if (field.id === "email" && ! isEmail(field.value)){
+       if (field.name === "email" && ! isEmail(field.value)){
            errorMsg = "Please enter a valid email";
        }
       
