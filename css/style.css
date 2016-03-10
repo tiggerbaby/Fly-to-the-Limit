@@ -803,7 +803,7 @@ header nav, nav ul, footer, hr {
   }
 
   /*---Gallery---*/
-  iframe,  .gallery img {
+  .gallery img {
   	display: none;
   }
 
